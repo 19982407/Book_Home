@@ -1,0 +1,31 @@
+
+.container {
+    background-color: #FC7300;
+    font-family: 'roboto';
+    padding: 20px;
+    border-radius: 15px;
+}  
+form {
+    width: 50%;
+}
+.content {
+    margin-left: 80px;
+}
+footer .footerContent{
+    background-color: black;
+    padding: 1.5rem 2rem;
+    color: #FC7300;
+}
+footer .footerContent ul{
+    list-style: none;
+    font-family: 'roboto';
+
+}
+footer .social{
+    font-weight: bold;
+    font-size: 30px;
+}
+footer .social a {
+    text-decoration: none;
+    color: #f7f7f7; 
+}

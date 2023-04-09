@@ -1,0 +1,106 @@
+button.Borrowed,button.Reservation{
+    background-color: #FC7300;
+    color: white;
+}
+
+button.Borrowed:hover,button.Reservation:hover{
+    color: #FC7300;
+    border: 1px solid #FC7300;
+}
+section.reservations a, section.borrowings a{
+    text-decoration: none;
+    color: white;
+}
+.imgContainer{
+    width: 100px;
+}
+footer .footerContent{
+    background-color: black;
+    padding: 1.5rem 2rem;
+    color: #FC7300;
+}
+footer .footerContent ul{
+    list-style: none;
+    font-family: 'roboto';
+
+}
+footer .social{
+    font-weight: bold;
+    font-size: 30px;
+}
+footer .social a {
+    text-decoration: none;
+    color: #f7f7f7; 
+}
+i {
+    color: white;
+    font-size: 2.5rem;
+}
+header .links {
+    position: relative;
+}
+header .links .links-icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+header .links .links-icon:hover span:nth-child(2) {
+    width: 100%;
+}
+header .links .links-icon span {
+    margin-bottom: 5px;
+    background-color: #333;
+    height: 2px;
+    width: 100%;
+}
+header .links .links-icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
+}
+header .links .links-icon span:last-child {
+    height: 3px;
+}
+header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FC7300;
+    min-width: 180px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 15px );
+    
+    z-index: 1;
+}
+
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #FC7300 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+header .links ul a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px;
+    transition: var(--main-duration);
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
+}
+header .links ul a:hover {
+    padding-left: 25px;
+}
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}

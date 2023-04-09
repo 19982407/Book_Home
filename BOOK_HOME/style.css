@@ -1,0 +1,54 @@
+
+section.indexSection {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+.pa {
+    color: white;
+    font-family: 'roboto';
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.po {
+    color: white;
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: 500;
+    width: 40%;
+}
+.indexSection .indexContainer{
+    padding: 4rem 10rem;
+}
+.indexContainer button{
+    background-color: #FC7300;
+    width: 30%;
+    color: white;
+}
+.indexContainer button:hover{
+    background-color: white;
+    border: 1px solid #FC7300;
+    color: #FC7300;
+
+}
+footer .footerContent{
+    background-color: black;
+    padding: 1.5rem 2rem;
+    color: #FC7300;
+}
+footer .footerContent ul{
+    list-style: none;
+    font-family: 'roboto';
+
+}
+
+footer .social{
+    font-weight: bold;
+    font-size: 30px;
+}
+footer .social a {
+    text-decoration: none;
+    color: #f7f7f7; 
+}

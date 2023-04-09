@@ -1,0 +1,157 @@
+i {
+    color: white;
+    font-size: 2.5rem;
+}
+
+button.BtnBook{
+    color: #FC7300;
+}
+button.BtnBook:hover{
+    color: white;
+}
+
+
+footer .footerContent{
+    background-color: black;
+    padding: 1.5rem 2rem;
+    color: #FC7300;
+}
+footer .footerContent ul{
+    list-style: none;
+    font-family: 'roboto';
+
+}
+
+footer .social{
+    font-weight: bold;
+    font-size: 30px;
+}
+footer .social a {
+    text-decoration: none;
+    color: #f7f7f7; 
+}
+header .links {
+    position: relative;
+}
+header .links .links-icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+header .links .links-icon:hover span:nth-child(2) {
+    width: 100%;
+}
+header .links .links-icon span {
+    margin-bottom: 5px;
+    background-color: #333;
+    height: 2px;
+    width: 100%;
+}
+header .links .links-icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
+}
+header .links .links-icon span:last-child {
+    height: 3px;
+}
+header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FC7300;
+    min-width: 180px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 15px );
+    
+    z-index: 1;
+}
+
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #FC7300 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+header .links ul a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px;
+    transition: var(--main-duration);
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
+}
+header .links ul a:hover,header .links form button.myLogout:hover {
+    padding-left: 25px;
+}
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+div.cards img{
+    height: 20rem;
+    width: 15rem;
+}
+
+.our-work{
+    background-color: var(--section-color); 
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #fc710098;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px ));
+    -webkit-transform: translateX(calc(-100% - 5px ));
+    -moz-transform: translateX(calc(-100% - 5px ));
+    -ms-transform: translateX(calc(-100% - 5px ));
+    -o-transform: translateX(calc(-100% - 5px ));
+} 
+.our-work .box:hover::before{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+/* End Our work  */
